@@ -1,0 +1,14 @@
+{
+  "name": "kanafany-menu-2",
+  "version": "1.0.0",
+  "description": "Kanafany Tablet Menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AJ Vergara",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
