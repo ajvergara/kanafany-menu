@@ -11,11 +11,6 @@ class NextPage{
   }
 
   clicked(){
-    // this.display.on("click", function(){
-    //   this.fadeOut("slow", function(){
-    //     window.location.replace("kanafany-two.html");
-    //   });
-    // });
     $(".display").fadeOut("slow", function(){
       window.location.replace("kanafany-two.html");
     });

@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "bootstrap";
 @import "base/_global";
 @import "modules/_display";
 @import "modules/_btn";
