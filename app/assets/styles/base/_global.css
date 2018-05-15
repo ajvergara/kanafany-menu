@@ -3,6 +3,17 @@ html{
   max-height: 800px;
   overflow: hidden;
   font-family: "Helvetica", sans-serif;
+  animation-name: fading;
+  animation-duration: 1s;
+}
+
+@keyframes fading {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: .9;
+  }
 }
 
 img{

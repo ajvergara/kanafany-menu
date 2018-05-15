@@ -346,6 +346,28 @@ html{
   max-height: 800px;
   overflow: hidden;
   font-family: "Helvetica", sans-serif;
+  -webkit-animation-name: fading;
+          animation-name: fading;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fading {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: .9;
+  }
+}
+
+@keyframes fading {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: .9;
+  }
 }
 
 img{
