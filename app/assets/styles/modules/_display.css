@@ -1,0 +1,22 @@
+.display{
+  height: 800px;
+  width: 1280px;
+  overflow: hidden;
+  position: relative;
+
+  &--bg-1{
+    background: url("/assets/images/kanafany_perspective_1.jpeg") no-repeat center center;
+    background-size: cover;
+  }
+
+  &--bg-2{
+    background: url("/assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
+    background-size: cover;
+  }
+
+  &__btn{
+    position: absolute;
+    top: 570px;
+    left: 437px;
+  }
+}

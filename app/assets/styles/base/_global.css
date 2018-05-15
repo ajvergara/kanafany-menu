@@ -1,0 +1,10 @@
+html{
+  max-width: 1280px;
+  max-height: 800px;
+  overflow: hidden;
+  font-family: "Helvetica", sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
