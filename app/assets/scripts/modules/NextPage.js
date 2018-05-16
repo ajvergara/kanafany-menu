@@ -13,13 +13,13 @@ class NextPage{
   }
 
   clicked(){
-    $(".display--bg-1").fadeOut("slow", function(){
+    $(".display--bg-1").fadeOut("300", function(){
       window.location.replace("kanafany-two.html");
     });
-    $(".display--bg-2").fadeOut("slow", function(){
+    $(".display--bg-2").fadeOut("300", function(){
       window.location.replace("menu.html");
     });
-    $(".display--bg-3").fadeOut("slow", function(){
+    $(".display--bg-3").fadeOut("300", function(){
       window.location.replace("index.html");
     });
   }

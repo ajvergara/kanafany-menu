@@ -12,7 +12,8 @@
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.5.0",

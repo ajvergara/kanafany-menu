@@ -1,0 +1,14 @@
+.products{
+
+  &__btn{
+    display: inline-block;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 5;
+    padding: 20px 40px;
+    background-color: brown;
+    border-radius: 5px;
+    color: #fff;
+  }
+}

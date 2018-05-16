@@ -1,8 +1,12 @@
 @import "normalize.css";
-@import "bootstrap";
+/* @import "bootstrap"; */
 @import "base/_global";
 @import "modules/_display";
 @import "modules/_btn";
 @import "modules/_menu-item";
 @import "modules/_wrapper";
 @import "modules/_row";
+@import "../../../node_modules/slick-carousel/slick/slick";
+@import "../../../node_modules/slick-carousel/slick/slick-theme";
+@import "modules/_slick-arrows";
+@import "modules/_products";

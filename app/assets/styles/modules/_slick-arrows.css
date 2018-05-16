@@ -1,0 +1,23 @@
+html{
+  .slick-prev{
+    left: 10px;
+    z-index: 2;
+  }
+
+  .slick-next{
+    right: 10px;
+    z-index: 2;
+  }
+
+  .slick-dots{
+    bottom: 30px;
+
+    & button::before{
+      color: #fff;
+    }
+
+     & .slick-active button:before{
+      color: #fff;
+    }
+  }
+}
