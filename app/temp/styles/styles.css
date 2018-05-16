@@ -8850,6 +8850,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html{
   max-width: 1280px;
   max-height: 800px;
@@ -8890,12 +8894,26 @@ img{
   position: relative;
 }
 
+.display--relative{
+    display: relative;
+  }
+
 .display--bg-1{
     background: url("../../assets/images/kanafany_perspective_1.jpeg") no-repeat center center;
     background-size: cover;
   }
 
 .display--bg-2{
+    background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
+    background-size: cover;
+  }
+
+.display--bg-3{
+    height: 800px;
+    width: 1280px;
+    overflow: hidden;
+    position: relative;
+
     background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
     background-size: cover;
   }
@@ -8914,3 +8932,52 @@ img{
   border-radius: 10px;
   border: 1px solid #fff;
 }
+
+.btn--small{
+    padding: 20px 50px;
+  }
+
+.menu-item{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu-item__image{
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+.menu-item__item{
+    margin-bottom: 25px;
+  }
+
+.menu-item__btn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    margin: 0;
+  }
+
+.wrapper{
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row--gutters{
+    margin-right: -25px;
+  }
+
+.row--gutters > div{
+    padding-right: 25px;
+  }
+
+.row__small-4{
+    width: 33.33%;
+    float: left;
+  }

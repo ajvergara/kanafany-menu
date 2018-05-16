@@ -4,12 +4,26 @@
   overflow: hidden;
   position: relative;
 
+  &--relative{
+    display: relative;
+  }
+
   &--bg-1{
     background: url("../../assets/images/kanafany_perspective_1.jpeg") no-repeat center center;
     background-size: cover;
   }
 
   &--bg-2{
+    background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
+    background-size: cover;
+  }
+
+  &--bg-3{
+    height: 800px;
+    width: 1280px;
+    overflow: hidden;
+    position: relative;
+
     background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
     background-size: cover;
   }

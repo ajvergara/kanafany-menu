@@ -1,0 +1,15 @@
+.row{
+
+  &--gutters{
+    margin-right: -25px;
+  }
+
+  &--gutters > div{
+    padding-right: 25px;
+  }
+
+  &__small-4{
+    width: 33.33%;
+    float: left;
+  }
+}

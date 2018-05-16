@@ -5,4 +5,8 @@
   padding: 30px 60px;
   border-radius: 10px;
   border: 1px solid #fff;
+
+  &--small{
+    padding: 20px 50px;
+  }
 }

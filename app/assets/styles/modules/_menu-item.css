@@ -1,0 +1,22 @@
+.menu-item{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &__image{
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__item{
+    margin-bottom: 25px;
+  }
+
+  &__btn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    margin: 0;
+  }
+}
