@@ -10,3 +10,4 @@
 @import "../../../node_modules/slick-carousel/slick/slick-theme";
 @import "modules/_slick-arrows";
 @import "modules/_products";
+@import "../../../node_modules/slick-lightbox/dist/slick-lightbox";

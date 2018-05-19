@@ -3,7 +3,7 @@ const gulp = require("gulp"),
 
 gulp.task("scripts", function(){
   webpack({
-    mode: "production",
+    mode: "development",
     entry: {
       App: __dirname + "/../../app/assets/scripts/App.js",
       Vendor: __dirname + "/../../app/assets/scripts/Vendor.js"
@@ -12,6 +12,12 @@ gulp.task("scripts", function(){
       path: __dirname + "/../../app/temp/scripts",
       filename: "[name].js"
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
+    ],
     module: {
       rules: [
         {
