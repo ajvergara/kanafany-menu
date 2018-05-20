@@ -430,7 +430,7 @@ img{
 
 .btn:active{
     background-color: #f4f4f4;
-    color: #000;  
+    color: #000;
   }
 
 .btn--small{
@@ -446,15 +446,17 @@ img{
 .menu-item{
   position: absolute;
   width: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 125px;
 }
+
+/* transform: translateY(-50%); */
 
 .menu-item__image{
     border-radius: 20px;
     overflow: hidden;
   }
+
+/* top: 50%; */
 
 .menu-item__item{
     margin-bottom: 25px;
@@ -855,15 +857,15 @@ html .slick-next{
   }
 
 html .slick-dots{
-    bottom: 30px;
+    bottom: 5px;
   }
 
 html .slick-dots button::before{
-      color: #fff;
+      /* color: #fff; */
     }
 
 html .slick-dots .slick-active button:before{
-      color: #fff;
+      /* color: #fff; */
     }
 
 .products__image{
@@ -875,6 +877,13 @@ html .slick-dots .slick-active button:before{
     padding: 140px;
     top: 67px;
     left: 45px;
+  }
+
+.products__item-1--larger{
+    position: absolute;
+    padding: 140px 190px;
+    top: 67px;
+    left: 75px;
   }
 
 .products__item-2{
@@ -896,6 +905,13 @@ html .slick-dots .slick-active button:before{
     padding: 140px;
     top: 457px;
     left: 390px;
+  }
+
+.products__item-4--larger{
+    position: absolute;
+    padding: 140px 190px;
+    top: 457px;
+    left: 266px;
   }
 
 .products__btn{

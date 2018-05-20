@@ -11,6 +11,13 @@
     left: 45px;
   }
 
+  &__item-1--larger{
+    position: absolute;
+    padding: 140px 190px;
+    top: 67px;
+    left: 75px;
+  }
+
   &__item-2{
     position: absolute;
     padding: 140px;
@@ -30,6 +37,13 @@
     padding: 140px;
     top: 457px;
     left: 390px;
+  }
+
+  &__item-4--larger{
+    position: absolute;
+    padding: 140px 190px;
+    top: 457px;
+    left: 266px;
   }
 
   &__btn{

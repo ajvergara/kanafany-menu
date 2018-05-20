@@ -51,7 +51,7 @@ gulp.task("optimizeImages", ["deleteDist"], function(){
 });
 
 gulp.task("htmlTrigger", ["styles", "scripts"], function(){
-  gulp.start(["index", "kanafany", "menu", "croissant"])
+  gulp.start(["index", "kanafany", "menu", "croissant", "desserts", "coldbev", "fondue", "icecream"]);
 });
 
 gulp.task("index", ["htmlTrigger"], function(){
@@ -93,6 +93,47 @@ gulp.task("croissant", ["htmlTrigger"], function(){
     }))
     .pipe(gulp.dest("./dist"));
 });
+
+gulp.task("desserts", ["htmlTrigger"], function(){
+  return gulp.src('./app/desserts.html')
+    .pipe(usemin({
+      css: [function(){ return rev() }, function(){ return cssnano() }],
+      js: [function(){ return rev() }, function(){ return uglify() }],
+      html: [htmlmin({ collapseWhitespace: true})]
+    }))
+    .pipe(gulp.dest("./dist"));
+});
+
+gulp.task("coldbev", ["htmlTrigger"], function(){
+  return gulp.src('./app/coldbev.html')
+    .pipe(usemin({
+      css: [function(){ return rev() }, function(){ return cssnano() }],
+      js: [function(){ return rev() }, function(){ return uglify() }],
+      html: [htmlmin({ collapseWhitespace: true})]
+    }))
+    .pipe(gulp.dest("./dist"));
+});
+
+gulp.task("fondue", ["htmlTrigger"], function(){
+  return gulp.src('./app/fondue.html')
+    .pipe(usemin({
+      css: [function(){ return rev() }, function(){ return cssnano() }],
+      js: [function(){ return rev() }, function(){ return uglify() }],
+      html: [htmlmin({ collapseWhitespace: true})]
+    }))
+    .pipe(gulp.dest("./dist"));
+});
+
+gulp.task("icecream", ["htmlTrigger"], function(){
+  return gulp.src('./app/ice_cream.html')
+    .pipe(usemin({
+      css: [function(){ return rev() }, function(){ return cssnano() }],
+      js: [function(){ return rev() }, function(){ return uglify() }],
+      html: [htmlmin({ collapseWhitespace: true})]
+    }))
+    .pipe(gulp.dest("./dist"));
+});
+
 
 gulp.task("slickLoader", ["deleteDist", "htmlTrigger"], function(){
   return gulp.src("./app/temp/styles/ajax-loader.gif")

@@ -1,8 +1,9 @@
 .menu-item{
   position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 125px;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
 
   &__image{
     border-radius: 20px;

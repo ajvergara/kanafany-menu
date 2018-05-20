@@ -10,14 +10,14 @@ html{
   }
 
   .slick-dots{
-    bottom: 30px;
+    bottom: 5px;
 
     & button::before{
-      color: #fff;
+      /* color: #fff; */
     }
 
      & .slick-active button:before{
-      color: #fff;
+      /* color: #fff; */
     }
   }
 }
