@@ -394,12 +394,12 @@ img{
   }
 
 .display--bg-1{
-    background: url("../../assets/images/kanafany_perspective_1.jpeg") no-repeat center center;
+    background: url("../../assets/images/screen_1.jpg") no-repeat center center;
     background-size: cover;
   }
 
 .display--bg-2{
-    background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
+    background: url("../../assets/images/screen_2.jpg") no-repeat center center;
     background-size: cover;
   }
 
@@ -409,27 +409,38 @@ img{
     overflow: hidden;
     position: relative;
 
-    background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
+    background: url("../../assets/images/menu_bg.jpg") no-repeat center center;
     background-size: cover;
   }
 
 .display__btn{
     position: absolute;
-    top: 570px;
-    left: 437px;
+    top: 630px;
+    left: 467px;
   }
 
 .btn{
-  background-color: #453116;
-  font-size: 2rem;
+  background-color: transparent;
   color: #fff;
-  padding: 30px 60px;
-  border-radius: 10px;
+  padding: 20px 40px;
+  border-radius: 5px;
   border: 1px solid #fff;
+  font-size: 1rem;
 }
 
+.btn:active{
+    background-color: #f4f4f4;
+    color: #000;  
+  }
+
 .btn--small{
-    padding: 20px 50px;
+    padding: 20px 40px;
+  }
+
+.btn--large{
+    font-size: 1.8rem;
+    padding: 30px 60px;
+    border-radius: 10px;
   }
 
 .menu-item{
@@ -450,6 +461,7 @@ img{
   }
 
 .menu-item__btn{
+    font-size: 1rem;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -861,17 +873,29 @@ html .slick-dots .slick-active button:before{
 .products__item-1{
     position: absolute;
     padding: 140px;
-    background-color: red;
     top: 67px;
-    left: 75px;
+    left: 45px;
   }
 
 .products__item-2{
     position: absolute;
     padding: 140px;
-    background-color: blue;
     top: 67px;
-    left: 410px;
+    left: 390px;
+  }
+
+.products__item-3{
+    position: absolute;
+    padding: 140px;
+    top: 457px;
+    left: 45px;
+  }
+
+.products__item-4{
+    position: absolute;
+    padding: 140px;
+    top: 457px;
+    left: 390px;
   }
 
 .products__btn{
@@ -880,10 +904,6 @@ html .slick-dots .slick-active button:before{
     bottom: 5px;
     right: 5px;
     z-index: 5;
-    padding: 20px 40px;
-    background-color: brown;
-    border-radius: 5px;
-    color: #fff;
   }
 
 .slick-lightbox{position:fixed;top:0;left:0;z-index:9999;width:100%;height:100%;background:black;transition:opacity 0.5s ease}

@@ -7,17 +7,29 @@
   &__item-1{
     position: absolute;
     padding: 140px;
-    background-color: red;
     top: 67px;
-    left: 75px;
+    left: 45px;
   }
 
   &__item-2{
     position: absolute;
     padding: 140px;
-    background-color: blue;
     top: 67px;
-    left: 410px;
+    left: 390px;
+  }
+
+  &__item-3{
+    position: absolute;
+    padding: 140px;
+    top: 457px;
+    left: 45px;
+  }
+
+  &__item-4{
+    position: absolute;
+    padding: 140px;
+    top: 457px;
+    left: 390px;
   }
 
   &__btn{
@@ -26,10 +38,6 @@
     bottom: 5px;
     right: 5px;
     z-index: 5;
-    padding: 20px 40px;
-    background-color: brown;
-    border-radius: 5px;
-    color: #fff;
   }
 
 }

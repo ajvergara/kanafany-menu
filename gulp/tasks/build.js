@@ -51,7 +51,7 @@ gulp.task("optimizeImages", ["deleteDist"], function(){
 });
 
 gulp.task("htmlTrigger", ["styles", "scripts"], function(){
-  gulp.start(["index", "kanafany", "menu", "baking"])
+  gulp.start(["index", "kanafany", "menu", "croissant"])
 });
 
 gulp.task("index", ["htmlTrigger"], function(){
@@ -84,8 +84,8 @@ gulp.task("menu", ["htmlTrigger"], function(){
     .pipe(gulp.dest("./dist"));
 });
 
-gulp.task("baking", ["htmlTrigger"], function(){
-  return gulp.src('./app/baking.html')
+gulp.task("croissant", ["htmlTrigger"], function(){
+  return gulp.src('./app/croissantmuffin.html')
     .pipe(usemin({
       css: [function(){ return rev() }, function(){ return cssnano() }],
       js: [function(){ return rev() }, function(){ return uglify() }],
@@ -104,4 +104,4 @@ gulp.task("slickFonts", ["slickLoader"], function(){
     .pipe(gulp.dest("./dist/assets/styles/fonts"));
 });
 
-gulp.task("build", ["deleteDist", "copyGeneralFiles", "optimizeImages", "index", "kanafany", "menu", "baking", "slickLoader", "slickFonts"]);
+gulp.task("build", ["deleteDist", "copyGeneralFiles", "optimizeImages", "htmlTrigger", "slickLoader", "slickFonts"]);

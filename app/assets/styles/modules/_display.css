@@ -9,12 +9,12 @@
   }
 
   &--bg-1{
-    background: url("../../assets/images/kanafany_perspective_1.jpeg") no-repeat center center;
+    background: url("../../assets/images/screen_1.jpg") no-repeat center center;
     background-size: cover;
   }
 
   &--bg-2{
-    background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
+    background: url("../../assets/images/screen_2.jpg") no-repeat center center;
     background-size: cover;
   }
 
@@ -24,13 +24,13 @@
     overflow: hidden;
     position: relative;
 
-    background: url("../../assets/images/kanafany_perspective_7.jpeg") no-repeat center center;
+    background: url("../../assets/images/menu_bg.jpg") no-repeat center center;
     background-size: cover;
   }
 
   &__btn{
     position: absolute;
-    top: 570px;
-    left: 437px;
+    top: 630px;
+    left: 467px;
   }
 }
