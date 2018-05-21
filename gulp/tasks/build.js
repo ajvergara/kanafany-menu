@@ -51,7 +51,7 @@ gulp.task("optimizeImages", ["deleteDist"], function(){
 });
 
 gulp.task("htmlTrigger", ["styles", "scripts"], function(){
-  gulp.start(["index", "kanafany", "menu", "croissant", "desserts", "coldbev", "fondue", "icecream"]);
+  gulp.start(["index", "kanafany", "menu", "croissant", "desserts", "coldbev", "fondue", "icecream", "hotbev"]);
 });
 
 gulp.task("index", ["htmlTrigger"], function(){
@@ -134,6 +134,15 @@ gulp.task("icecream", ["htmlTrigger"], function(){
     .pipe(gulp.dest("./dist"));
 });
 
+gulp.task("hotbev", ["htmlTrigger"], function(){
+  return gulp.src('./app/hotbev.html')
+    .pipe(usemin({
+      css: [function(){ return rev() }, function(){ return cssnano() }],
+      js: [function(){ return rev() }, function(){ return uglify() }],
+      html: [htmlmin({ collapseWhitespace: true})]
+    }))
+    .pipe(gulp.dest("./dist"));
+});
 
 gulp.task("slickLoader", ["deleteDist", "htmlTrigger"], function(){
   return gulp.src("./app/temp/styles/ajax-loader.gif")

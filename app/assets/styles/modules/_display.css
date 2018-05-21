@@ -1,8 +1,18 @@
 .display{
-  height: 800px;
-  width: 1280px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @mixin atLarge{
+    height: 800px;
+    width: 1280px;
+  }
 
   &--relative{
     display: relative;
@@ -19,10 +29,21 @@
   }
 
   &--bg-3{
-    height: 800px;
-    width: 1280px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @mixin atLarge{
+      height: 800px;
+      width: 1280px;
+      overflow: hidden;
+      position: relative;
+    }
 
     background: url("../../assets/images/menu_bg.jpg") no-repeat center center;
     background-size: cover;
@@ -30,7 +51,17 @@
 
   &__btn{
     position: absolute;
-    top: 630px;
-    left: 467px;
+    top: 75%;
+    left: 32%;
+
+    @mixin atMedium{
+      top: 75%;
+      left: 35%;
+    }
+
+    @mixin atLarge{
+      top: 630px;
+      left: 467px;
+    }
   }
 }

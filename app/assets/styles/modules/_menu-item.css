@@ -1,9 +1,13 @@
 .menu-item{
   position: absolute;
   width: 100%;
-  top: 125px;
+  top: 25px;
   /* top: 50%; */
   /* transform: translateY(-50%); */
+
+  @mixin atLarge{
+    top: 125px;
+  }
 
   &__image{
     border-radius: 20px;
@@ -18,7 +22,11 @@
     font-size: 1rem;
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 5px;
     margin: 0;
+
+    @mixin atLarge{
+      bottom: 15px;
+    }
   }
 }

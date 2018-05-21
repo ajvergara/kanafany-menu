@@ -3,13 +3,19 @@
 }
 
 html{
-  max-width: 1280px;
-  max-height: 800px;
-  overflow: hidden;
+  /* max-width: 1280px; */
+  /* max-height: 800px; */
+  /* overflow: hidden; */
+  height: 100%;
+  width: 100%;
   font-family: "Helvetica", sans-serif;
   animation-name: fading;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+}
+
+body{
+  /* position: relative; */
 }
 
 @keyframes fading {

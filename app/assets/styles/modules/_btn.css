@@ -1,10 +1,14 @@
 .btn{
   background-color: transparent;
   color: #fff;
-  padding: 20px 40px;
   border-radius: 5px;
   border: 1px solid #fff;
   font-size: 1rem;
+  padding: 10px 20px;
+
+  @mixin atLarge{
+    padding: 20px 40px;
+  }
 
   &:active{
     background-color: #f4f4f4;
@@ -12,12 +16,20 @@
   }
 
   &--small{
-    padding: 20px 40px;
+    padding: 10px 20px;
+
+    @mixin atLarge{
+      padding: 20px 40px;
+    }
   }
 
   &--large{
-    font-size: 1.8rem;
-    padding: 30px 60px;
-    border-radius: 10px;
+    font-size: 1rem;
+
+    @mixin atLarge{
+      font-size: 1.8rem;
+      padding: 30px 60px;
+      border-radius: 10px;
+    }
   }
 }

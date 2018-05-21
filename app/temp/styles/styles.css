@@ -341,16 +341,16 @@ template {
   display: none;
 }
 
-/* @import "bootstrap"; */
-
 * {
   box-sizing: border-box;
 }
 
 html{
-  max-width: 1280px;
-  max-height: 800px;
-  overflow: hidden;
+  /* max-width: 1280px; */
+  /* max-height: 800px; */
+  /* overflow: hidden; */
+  height: 100%;
+  width: 100%;
   font-family: "Helvetica", sans-serif;
   -webkit-animation-name: fading;
           animation-name: fading;
@@ -358,6 +358,10 @@ html{
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
+}
+
+body{
+  /* position: relative; */
 }
 
 @-webkit-keyframes fading {
@@ -383,11 +387,24 @@ img{
 }
 
 .display{
-  height: 800px;
-  width: 1280px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
+
+@media only screen and (min-width: 1280px){
+
+.display{
+    height: 800px;
+    width: 1280px
+}
+  }
 
 .display--relative{
     display: relative;
@@ -404,29 +421,66 @@ img{
   }
 
 .display--bg-3{
-    height: 800px;
-    width: 1280px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     background: url("../../assets/images/menu_bg.jpg") no-repeat center center;
     background-size: cover;
   }
 
+@media only screen and (min-width: 1280px){
+
+.display--bg-3{
+      height: 800px;
+      width: 1280px;
+      overflow: hidden;
+      position: relative;
+  }
+  }
+
 .display__btn{
     position: absolute;
-    top: 630px;
-    left: 467px;
+    top: 75%;
+    left: 32%;
+  }
+
+@media only screen and (min-width: 667px){
+
+.display__btn{
+      top: 75%;
+      left: 35%
+  }
+  }
+
+@media only screen and (min-width: 1280px){
+
+.display__btn{
+      top: 630px;
+      left: 467px
+  }
   }
 
 .btn{
   background-color: transparent;
   color: #fff;
-  padding: 20px 40px;
   border-radius: 5px;
   border: 1px solid #fff;
   font-size: 1rem;
+  padding: 10px 20px;
 }
+
+@media only screen and (min-width: 1280px){
+
+.btn{
+    padding: 20px 40px
+}
+  }
 
 .btn:active{
     background-color: #f4f4f4;
@@ -434,29 +488,50 @@ img{
   }
 
 .btn--small{
-    padding: 20px 40px;
+    padding: 10px 20px;
+  }
+
+@media only screen and (min-width: 1280px){
+
+.btn--small{
+      padding: 20px 40px
+  }
   }
 
 .btn--large{
-    font-size: 1.8rem;
-    padding: 30px 60px;
-    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+@media only screen and (min-width: 1280px){
+
+.btn--large{
+      font-size: 1.8rem;
+      padding: 30px 60px;
+      border-radius: 10px
+  }
   }
 
 .menu-item{
   position: absolute;
   width: 100%;
-  top: 125px;
+  top: 25px;
 }
 
 /* transform: translateY(-50%); */
+
+@media only screen and (min-width: 1280px){
+
+.menu-item{
+    top: 125px
+}
+  }
+
+/* top: 50%; */
 
 .menu-item__image{
     border-radius: 20px;
     overflow: hidden;
   }
-
-/* top: 50%; */
 
 .menu-item__item{
     margin-bottom: 25px;
@@ -466,8 +541,15 @@ img{
     font-size: 1rem;
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 5px;
     margin: 0;
+  }
+
+@media only screen and (min-width: 1280px){
+
+.menu-item__btn{
+      bottom: 15px
+  }
   }
 
 .wrapper{
@@ -867,6 +949,10 @@ html .slick-dots button::before{
 html .slick-dots .slick-active button:before{
       /* color: #fff; */
     }
+
+html .slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
 
 .products__image{
     position: relative;
